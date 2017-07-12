@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/index.css">
+<link rel="stylesheet" href="./css/art.css">
+<script src="./js/jquery.min.js"></script>
+<script src="./js/kindeditor-min.js"></script>
+<script src="./js/emoticons.js"></script>
+<script src="./js/zh_CN.js"></script>
+</head>
+<body>
+    <div class="suspend">
+	<dl>
+		<dt class="IE6PNG"></dt>
+		<dd class="suspendQQ"><a href="#" target="_blank"></a></dd>
+		<dd class="suspendTel"><a href="javascript:void(0);"></a></dd>
+	</dl>
+</div>
+    <nav>
+       <div class="nav">
+        <h2>
+           洋哥的BLOG
+        </h2>
+        <ul>
+            <li class="this"><a href="index.php">主页</a></li>
+            <li><a href="">目录</a></li>
+            <li><a href="">照片</a></li>
+            <li><a href="">关于我</a></li>
+            <li><a href="artadd.php">Admin</a></li>
+        </ul>
+        <?php if(!acc()) { ?>
+            <p><a href="login.php">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="reg.php">注册</a></p>
+        <?php  }else{ ?>
+            <p><a href=""></a>&nbsp;&nbsp;<a><?php echo $_COOKIE['name'] ?><a>&nbsp;&nbsp;<a href=""></a></p>
+        <?php } ?>
+        <div class="clear"></div>
+        </div>
+    </nav>
+    <div id="main">
+       <div class="main">
+        <div id="lside">
+            <article>
+                <h2><a href="#"><?php echo $art['title'];?></a></h2>
+                <div class="entry_header">
+                    <time><?php echo date('Y/m/d' , $art['pubtime']);?></time>
+                    by
+                    <a href="#">洋哥</a>
+                    &nbsp;&nbsp;<a class="catlink" href="#"><?php echo $art['catname'];?></a>
+                    &nbsp;&nbsp;<a class="comment" href="#"><?php echo $art['comm'];?>条评论</a>
+                </div>
+                <?php if($art['pic']){?>
+                <img src="<?php echo '.'.$art['pic'];?>" alt="">
+                <?php }?>
+                <div class="entry_content">
+                    <?php echo $art['content'];?>
+                </div>
+            </article>
+            <div id="comments" style="display:block">
+                <?php foreach($comms as $c) {?>
+                <ol>
+                    <li>
+                        <img src="https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=50&d=identicon&r=pg" alt="">
+                        <cite><a href="#"><?php echo $c['name'];?></a></cite> <br>
+                        <time><?php echo $c['pubtime']; ?></time>
+                    </li>
+                    <li>
+                        <?php echo $c['content'];?>
+                    </li>
+                </ol>
+               <?php }?> 
+            </div>
+            <div id="respond" class="comment-respond">
+                <h3>我要评论</h3>
+                <?php if(isset($rs) && ($rs == false)) {?>
+                <p style="color:red;">留言发布失败</p>
+                <?php  }?>
+                <form action="" method="post">
+                   <!-- <p>
+                    <input placeholder="your nick" name="nick" type="text" value="" size="30">
+                    </p>
+                    <p>
+                    <input placeholder="Email" name="email" type="text" value="" size="30">
+                    </p>-->
+                    <p>
+                    <textarea name="content" style="width:744px;height:120px;visibility:hidden; font-family:微软雅黑;"></textarea>
+                    <p>
+                    <div style="text-align:center;padding:10px;"><input type="submit" value="提交"></div>
+                </p>
+                </form>
+            </div>
+        </div>
+        <div id="rside">
+            <aside>
+                <h4>热门排行</h4>
+                <div style="padding-top:10px;">
+                <p></p>
+                <ul>
+                    <?php foreach($hots as $h) {?>
+                        <li><a href="art.php?art_id=<?php echo $h['art_id'];?>" title="<?php echo $h['title'];?>"><?php echo $h['title'];?></a></li>
+                    <?php }?>
+                </ul>
+                <div class="clear"></div>
+                </div>
+            </aside>
+           <!--  <img src="./images/guanggao.jpg" style=" margin-bottom:10px;" /> -->
+            <div class="aside">
+                <h4>栏目推荐</h4>
+
+                <ul >
+                    <?php foreach($cats as $c) {?>
+                        <li><a href="index.php?cat_id=<?php echo $c['cat_id'];?>"><?php echo $c['catname'];?></a></li>
+                        
+                    <?php }?>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    </div>
+    <div id="footer">
+        Copyright &copy; 2015 · GeneratePress · WordPress
+    </div>
+        <script>
+		var editor;
+		KindEditor.ready(function(K) {
+			editor = K.create('textarea[name="content"]', {
+				resizeType : 1,
+				allowPreviewEmoticons : false,
+				allowImageUpload : false,
+				items : [
+					'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+					'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+					'insertunorderedlist', '|', 'emoticons', 'image', 'link']
+			});
+		});
+		</script>
+        <script type="text/javascript">           
+$(document).ready(function(){
+
+	 $(".suspend").mouseover(function() {
+        $(this).stop();
+        $(this).animate({width: 180}, 400);
+    })
+	
+    $(".suspend").mouseout(function() {
+        $(this).stop();
+        $(this).animate({width: 40}, 400);
+    });
+	
+});
+</script>
+</body>
+</html>

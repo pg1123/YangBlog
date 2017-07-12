@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>主页</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<script src="./js/jquery.min.js"></script>
+</head>
+<body>
+    <!-- <div class="suspend">
+    <dl>
+        <dt class="IE6PNG"></dt>
+        <dd class="suspendQQ"><a href="#" target="_blank"></a></dd>
+        <dd class="suspendTel"><a href="javascript:void(0);"></a></dd>
+    </dl> -->
+</div>
+    <nav>
+       <div class="nav">
+        <h2>
+            Yang BLOG
+        </h2>
+        <ul>
+            <li class="this"><a href="index.php">主页</a></li>
+            <li><a href="">目录</a></li>
+            <li><a href="player.php">音乐</a></li>
+            <li><a href="personal.php">关于我</a></li>
+            <li><a href="artadd.php">Admin</a></li>
+        </ul>
+        <?php if(!acc()) { ?>
+            <p><a href="login.php">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="reg.php">注册</a></p>
+        <?php  }else{ ?>
+            <p style="position:relative;">
+                <a href=""></a>&nbsp;&nbsp;<a id="user_name"><?php echo $_COOKIE['name'] ?><a>&nbsp;&nbsp;<a href=""></a>
+                <p style="position:absolute; top:75%; left:83.5%;"><a id="logout" style="color:red; display:none" href="logout.php" >退出</a></p>
+            </p>
+        <?php } ?>
+        <div class="input_box">
+        <input type="text" name="search" placeholder="在这里搜索关键词" class="input">
+        <input name="" type="button" class="bottom icon-search" />
+        <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        </div>
+    </nav>
+    <div id="main">
+       <div class="main">
+        <div id="lside">
+            <?php foreach($arts as $a ) {?>
+            <article>
+                <h2><a href="art.php?art_id=<?php echo $a['art_id'];?>"><?php echo $a['title'];?></a></h2>
+                <div class="entry_header">
+                    <time><?php echo date('Y/m/d' , $a['pubtime']);?></time>
+                    by
+                    <a href="#">刘律师</a>
+                   &nbsp;&nbsp;<a class="catlink" href="#"><?php echo $a['catname'];?></a>
+                    &nbsp;&nbsp;<a class="comment" href="#"><?php echo $a['comm'];?>条评论</a>
+                </div>
+                <?php if($a['thumb']) {?>
+                <img src="<?php echo '.' . $a['thumb'];?>" alt="">
+                <?php }?>
+                <div class="entry_content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo  mb_substr(strip_tags($a['content']),0,200,'utf-8').' ...';?>
+                </div>
+                <div><a href="art.php?art_id=<?php echo $a['art_id'];?>">查看更多>></a></div>
+            </article>
+            <?php }?>
+            <div id="pagebar">
+                Pages:&nbsp;
+                <?php foreach($page as $k=>$v) {?>
+                <?php if($k == $curr) {?>
+                <?php echo $k;}else {?>
+                <a href="index.php?<?php echo $v;?>"><?php echo $k;?></a>
+                <?php }?>
+                <?php }?>
+            </div>
+        </div>
+        <div id="rside">
+            <aside>
+                <h4>热门排行</h4>
+                <div style="padding-top:10px;">
+                <p></p>
+                <ul>
+                    <?php foreach($hots as $h) {?>
+                        <li><a href="art.php?art_id=<?php echo $h['art_id'];?>" title="<?php echo $h['title'];?>"><?php echo $h['title'];?></a></li>
+                    <?php }?>
+                </ul>
+                <div class="clear"></div>
+                </div>
+            </aside>
+            <!-- <img src="./images/guanggao.jpg" style=" margin-bottom:10px;" /> -->
+            <div class="aside">
+                <h4>栏目推荐</h4>
+
+                <ul >
+                    <?php foreach($cats as $c) {?>
+                        <li><a href="index.php?cat_id=<?php echo $c['cat_id'];?>"><?php echo $c['catname'];?></a></li>
+                        
+                    <?php }?>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+        </div>
+    </div>
+    <div id="footer">Copyright &copy; 2015 · GeneratePress · WordPress</div>
+<script type="text/javascript">           
+$(document).ready(function(){
+
+    $(".suspend").mouseover(function() {
+        $(this).stop();
+        $(this).animate({width: 180}, 400);
+    })
+    
+    $(".suspend").mouseout(function() {
+        $(this).stop();
+        $(this).animate({width: 40}, 400);
+    });
+
+    $("#user_name").mouseover(function () {
+            $('#logout').show();
+            //alert('ss');
+    });
+
+    $("#logout").mouseout(function () {
+            $(this).hide();
+    });
+    
+});
+</script>
+</body>
+</html>

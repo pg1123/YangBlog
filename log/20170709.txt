@@ -1,0 +1,692 @@
+-----------------------------------------
+2017/07/09 15:23:52
+insert into user (name,password,email,reg_date) values ('刘洋','342a959562d9f9f20de8efe1c5dab6db','474553214@qq.com','2017-07-09 03:23:52')
+
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:23:53
+insert into user (name,password,email,reg_date) values ('刘洋','342a959562d9f9f20de8efe1c5dab6db','474553214@qq.com','2017-07-09 03:23:53')
+
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:23:55
+insert into user (name,password,email,reg_date) values ('刘洋','342a959562d9f9f20de8efe1c5dab6db','474553214@qq.com','2017-07-09 03:23:55')
+
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:23:58
+insert into user (name,password,email,reg_date) values ('刘洋','342a959562d9f9f20de8efe1c5dab6db','474553214@qq.com','2017-07-09 03:23:58')
+
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:23:58
+insert into user (name,password,email,reg_date) values ('刘洋','342a959562d9f9f20de8efe1c5dab6db','474553214@qq.com','2017-07-09 03:23:58')
+
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:23:58
+insert into user (name,password,email,reg_date) values ('刘洋','342a959562d9f9f20de8efe1c5dab6db','474553214@qq.com','2017-07-09 03:23:58')
+
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:23:58
+insert into user (name,password,email,reg_date) values ('刘洋','342a959562d9f9f20de8efe1c5dab6db','474553214@qq.com','2017-07-09 03:23:58')
+
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:23:59
+insert into user (name,password,email,reg_date) values ('刘洋','342a959562d9f9f20de8efe1c5dab6db','474553214@qq.com','2017-07-09 03:23:59')
+
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:24:09
+insert into user (name,password,email,reg_date) values ('刘洋','342a959562d9f9f20de8efe1c5dab6db','474553214@qq.com','2017-07-09 03:24:09')
+
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:24:10
+insert into user (name,password,email,reg_date) values ('刘洋','342a959562d9f9f20de8efe1c5dab6db','474553214@qq.com','2017-07-09 03:24:10')
+
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:24:53
+insert into user (name,password,email,reg_date) values ('刘洋','342a959562d9f9f20de8efe1c5dab6db','474553214@qq.com','2017-07-09 03:24:53')
+
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:24:57
+insert into user (name,password,email,reg_date) values ('刘洋','342a959562d9f9f20de8efe1c5dab6db','474553214@qq.com','2017-07-09 03:24:57')
+
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:25:13
+insert into user (name,password,email,reg_date) values ('刘洋','342a959562d9f9f20de8efe1c5dab6db','474553214@qq.com','2017-07-09 03:25:13')
+
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:25:22
+insert into user (name,password,email,reg_date) values ('刘洋','342a959562d9f9f20de8efe1c5dab6db','474553214@qq.com1','2017-07-09 03:25:22')
+
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:26:05
+select * from user where name='LY'
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:26:06
+select * from user where name='LY'
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:26:31
+insert into user (name,password,email,reg_date) values ('12345','d06c3bfac8991fbfce3b92e06d88daef','sag@aa.com','2017-07-09 03:26:31')
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:26:43
+select * from user where name='12345'
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:26:43
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:26:43
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:26:43
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:26:43
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:27:09
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:27:09
+select * from comment where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:27:10
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:27:10
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:27:35
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:27:35
+select * from comment where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:27:35
+insert into comment (name,content,pubtime,art_id,ip) values ('12345','&lt;img src=\&quot;http://localhost/blog/js/plugins/../../images/jx2/j_0002.gif\&quot; alt=\&quot;\&quot; border=\&quot;0\&quot; /&gt;','2017-07-09 03:27:35','15','0')
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:27:35
+update art set comm=comm+1 where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:27:35
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:27:35
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:27:35
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:27:35
+select * from comment where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:27:35
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:27:35
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:27:51
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:27:51
+select * from comment where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:27:51
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:27:51
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:28:10
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:28:10
+select * from comment where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:28:10
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:28:10
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:28:21
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:28:21
+select * from comment where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:28:21
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:28:21
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:28:42
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:28:42
+select * from comment where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:28:42
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:28:42
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:28:43
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:28:43
+select * from comment where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:28:44
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:28:44
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:28:46
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:28:46
+select * from comment where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:28:46
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:28:46
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:28:50
+select * from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:29:05
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:29:10
+select * from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:29:21
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:29:22
+select * from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:30:09
+select * from art where art_id=4
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:30:09
+select * from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:30:09
+select title,content,cat_id,arttag from art where art_id=4
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:30:41
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:30:41
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:30:41
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:30:41
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:30:46
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:30:46
+select * from comment where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:30:46
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:30:46
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:13
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:13
+select * from comment where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:13
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:13
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:15
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:15
+select * from comment where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:15
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:15
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:20
+select * from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:24
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:24
+select * from comment where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:24
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:24
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:27
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:27
+select * from comment where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:27
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:27
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:28
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:28
+select * from comment where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:28
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:28
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:29
+select * from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:33
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:33
+select * from comment where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:34
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:34
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:39
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:39
+select * from comment where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:39
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:39
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:45
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:45
+select * from comment where art_id=15
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:45
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:45
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:49
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=14
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:49
+select * from comment where art_id=14
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:49
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:49
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:51
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=13
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:51
+select * from comment where art_id=13
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:51
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:31:51
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:32:19
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=13
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:32:19
+select * from comment where art_id=13
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:32:19
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:32:19
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:32:22
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:32:22
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:32:23
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:32:23
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:32:43
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=14
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:32:43
+select * from comment where art_id=14
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:32:43
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/09 15:32:43
+select cat_id,catname from cat
+-----------------------------------------
+

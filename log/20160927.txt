@@ -1,0 +1,558 @@
+-----------------------------------------
+2016/09/27 05:07:38
+select cat_id,catname from cat
+No database selected
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 05:07:38
+select count(*) from art where 1
+No database selected
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 05:07:38
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+No database selected
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 05:34:04
+select cat_id,catname from cat
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 05:34:04
+select count(*) from art where 1
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 05:34:04
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 05:34:07
+select cat_id,catname from cat
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 05:34:07
+select count(*) from art where 1
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 05:34:07
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 11:50:31
+select cat_id,catname from cat
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 11:50:31
+select count(*) from art where 1
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 11:50:31
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:03:08
+select cat_id,catname from cat
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:03:08
+select count(*) from art where 1
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:03:08
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:03:10
+select cat_id,catname from cat
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:03:10
+select count(*) from art where 1
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:03:10
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:03:12
+select cat_id,catname from cat
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:03:12
+select count(*) from art where 1
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:03:12
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:16:06
+select cat_id,catname from cat
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:16:06
+select count(*) from art where 1
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:16:06
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:16:08
+select cat_id,catname from cat
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:16:08
+select count(*) from art where 1
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:16:08
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:16:10
+select cat_id,catname from cat
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:16:10
+select count(*) from art where 1
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:16:10
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:42:49
+select cat_id,catname from cat
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:42:49
+select count(*) from art where 1
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:42:49
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:42:50
+select cat_id,catname from cat
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:42:50
+select count(*) from art where 1
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:42:50
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:42:57
+select cat_id,catname from cat
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:42:57
+select count(*) from art where 1
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:42:57
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:44:11
+select cat_id,catname from cat
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:44:11
+select count(*) from art where 1
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:44:11
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:44:13
+select cat_id,catname from cat
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:44:13
+select count(*) from art where 1
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:44:13
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:44:14
+select cat_id,catname from cat
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:44:14
+select count(*) from art where 1
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:44:14
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:44:16
+select cat_id,catname from cat
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:44:16
+select count(*) from art where 1
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:44:16
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:44:18
+select cat_id,catname from cat
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:44:18
+select count(*) from art where 1
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:44:18
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:44:20
+select cat_id,catname from cat
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:44:20
+select count(*) from art where 1
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:44:20
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:44:22
+select cat_id,catname from cat
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:44:22
+select count(*) from art where 1
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:44:22
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:57:44
+select cat_id,catname from cat
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:57:44
+select count(*) from art where 1
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 12:57:44
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+Access denied for user 'root'@'localhost' (using password: NO)
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 23:30:18
+select cat_id,catname from cat
+
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 23:30:18
+select count(*) from art where 1
+
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 23:30:18
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 23:31:36
+select cat_id,catname from cat
+
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 23:31:36
+select count(*) from art where 1
+
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 23:31:36
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 23:32:09
+select cat_id,catname from cat
+
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 23:32:09
+select count(*) from art where 1
+
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 23:32:09
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 23:32:29
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 23:32:29
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 23:32:29
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 23:33:34
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 23:33:34
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 23:33:34
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 23:33:35
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 23:33:35
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 23:33:35
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 23:33:36
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 23:33:36
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 23:33:36
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 23:33:53
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 23:33:53
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 23:33:53
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,2
+
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 23:34:00
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 23:34:00
+select count(*) from art where 1 and art.cat_id=1
+-----------------------------------------
+
+-----------------------------------------
+2016/09/27 23:34:00
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 and art.cat_id=1 order by art_id desc limit 0,2
+
+-----------------------------------------
+
