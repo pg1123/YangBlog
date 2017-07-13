@@ -13,11 +13,11 @@
 </head>
 <body>
     <div class="suspend">
-	<dl>
-		<dt class="IE6PNG"></dt>
-		<dd class="suspendQQ"><a href="#" target="_blank"></a></dd>
-		<dd class="suspendTel"><a href="javascript:void(0);"></a></dd>
-	</dl>
+    <dl>
+        <dt class="IE6PNG"></dt>
+        <dd class="suspendQQ"><a href="#" target="_blank"></a></dd>
+        <dd class="suspendTel"><a href="javascript:void(0);"></a></dd>
+    </dl>
 </div>
     <nav>
        <div class="nav">
@@ -52,7 +52,7 @@
                     &nbsp;&nbsp;<a class="comment" href="#"><?php echo $art['comm'];?>条评论</a>
                 </div>
                 <?php if($art['pic']){?>
-                <img src="<?php echo '.'.$art['pic'];?>" alt="">
+                <img width=100% src="<?php echo '.'.$art['pic'];?>" alt="">
                 <?php }?>
                 <div class="entry_content">
                     <?php echo $art['content'];?>
@@ -125,32 +125,32 @@
         Copyright &copy; 2015 · GeneratePress · WordPress
     </div>
         <script>
-		var editor;
-		KindEditor.ready(function(K) {
-			editor = K.create('textarea[name="content"]', {
-				resizeType : 1,
-				allowPreviewEmoticons : false,
-				allowImageUpload : false,
-				items : [
-					'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
-					'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
-					'insertunorderedlist', '|', 'emoticons', 'image', 'link']
-			});
-		});
-		</script>
+        var editor;
+        KindEditor.ready(function(K) {
+            editor = K.create('textarea[name="content"]', {
+                resizeType : 1,
+                allowPreviewEmoticons : false,
+                allowImageUpload : false,
+                items : [
+                    'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+                    'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+                    'insertunorderedlist', '|', 'emoticons', 'image', 'link']
+            });
+        });
+        </script>
         <script type="text/javascript">           
 $(document).ready(function(){
 
-	 $(".suspend").mouseover(function() {
+     $(".suspend").mouseover(function() {
         $(this).stop();
         $(this).animate({width: 180}, 400);
     })
-	
+    
     $(".suspend").mouseout(function() {
         $(this).stop();
         $(this).animate({width: 40}, 400);
     });
-	
+    
 });
 </script>
 </body>

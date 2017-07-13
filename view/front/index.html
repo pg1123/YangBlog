@@ -56,13 +56,16 @@
                    &nbsp;&nbsp;<a class="catlink" href="#"><?php echo $a['catname'];?></a>
                     &nbsp;&nbsp;<a class="comment" href="#"><?php echo $a['comm'];?>条评论</a>
                 </div>
-                <?php if($a['thumb']) {?>
-                <img src="<?php echo '.' . $a['thumb'];?>" alt="">
-                <?php }?>
-                <div class="entry_content">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo  mb_substr(strip_tags($a['content']),0,200,'utf-8').' ...';?>
+                <div>
+                    <?php if($a['thumb']) {?>
+                    <img style="float: left;" src="<?php echo '.' . $a['thumb'];?>" alt="">
+                    <?php }?>
+                    <div class="entry_content">
+                        <P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo  mb_substr(strip_tags($a['content']),0,200,'utf-8').' ...';?></P>
+                    <div><a href="art.php?art_id=<?php echo $a['art_id'];?>">查看更多>></a></div>
+                    </div>
+                    <div style="clear:both;"></div>
                 </div>
-                <div><a href="art.php?art_id=<?php echo $a['art_id'];?>">查看更多>></a></div>
             </article>
             <?php }?>
             <div id="pagebar">
