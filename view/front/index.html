@@ -136,10 +136,21 @@
         <span aria-hidden="true">&laquo;</span>
       </span>
     </li>
-    <li class="active">
-      <span>1 <span class="sr-only">(current)</span></span>
+    <?php foreach($page as $k=>$v) {?>
+        <?php if($k == $curr) {?>
+            <li class="active">
+        <?php }else {?>
+            <li class="disabled">
+        <?php }?>
+          <span><a href="index.php?<?php echo $v;?>"><?php echo $k;?></a></span>
+        </li>
+    <?php }?>
+
+    <li class="disabled">
+      <span>
+        <span aria-hidden="true">&raquo;</span>
+      </span>
     </li>
-    ...
   </ul>
 </nav>
             <!-- <div id="pagebar">
