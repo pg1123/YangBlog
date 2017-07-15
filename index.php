@@ -26,13 +26,13 @@ $page = getPage($num , $curr, $cnt);
 //查询所有的文章
 /*$sql = "select art_id,title,content,pubtime,comm,catname,thumb from art inner 
 join cat on art.cat_id=cat.cat_id where 1" . $where . ' order by art_id desc limit ' . ($curr-1)*$cnt . ',' . $cnt;*/
-$sql = "select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+$sql = "select art_id,title,content,pubtime,comm,catname,thumb,pic from art inner 
 join cat on art.cat_id=cat.cat_id where 1" . $where . ' order by art_id desc limit ' . ($curr-1)*$cnt . ',' . $cnt;
 //echo $sql;exit();
 $arts = mGetAll($sql);
 
 //热门排行
-$sql = "select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+$sql = "select art_id,title,content,pubtime,comm,catname,thumb,pic from art inner 
 join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit ". 10;
 //echo $sql;exit();
 $hots = mGetAll($sql);

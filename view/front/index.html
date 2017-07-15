@@ -1,12 +1,29 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>主页</title>
-<link href="css/reset.css" rel="stylesheet" type="text/css" />
-<link href="css/index.css" rel="stylesheet" type="text/css" />
-<script src="./js/jquery.min.js"></script>
-</head>
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Index</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/reset.css" rel="stylesheet" type="text/css" />
+  <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+  </head>
 <body>
     <!-- <div class="suspend">
     <dl>
@@ -15,7 +32,52 @@
         <dd class="suspendTel"><a href="javascript:void(0);"></a></dd>
     </dl> -->
 </div>
-    <nav>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">BLOG</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.php">主页</a></li>
+            <li><a href="">目录</a></li>
+            <li><a href="player.php">音乐</a></li>
+            <li><a href="personal.php">关于我</a></li>
+            <li><a href="artadd.php">Admin</a></li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">搜索</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+      <?php if(!acc()) { ?>
+        <li><a href="login.php">登录</a></li>
+        <li><a href="reg.php">注册</a></li>
+     <?php  }else{ ?>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $_COOKIE['name'] ?> <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="logout.php">退出</a></li>
+          </ul>
+        </li>
+        <?php } ?>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!--
+    <nav >
        <div class="nav">
         <h2>
             Yang BLOG
@@ -43,9 +105,10 @@
         <div class="clear"></div>
         </div>
     </nav>
+    -->
     <div id="main">
-       <div class="main">
-        <div id="lside">
+       <div class="main container">
+        <div id="lside" class="col-lg-9 .col-md-8 .col-sm-6 .col-xs-12">
             <?php foreach($arts as $a ) {?>
             <article>
                 <h2><a href="art.php?art_id=<?php echo $a['art_id'];?>"><?php echo $a['title'];?></a></h2>
@@ -58,17 +121,28 @@
                 </div>
                 <div>
                     <?php if($a['thumb']) {?>
-                    <img style="float: left;" src="<?php echo '.' . $a['thumb'];?>" alt="">
+                    <img style="float: left;" src="<?php echo '.' . $a['pic'];?>" alt="">
                     <?php }?>
-                    <div class="entry_content">
-                        <P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo  mb_substr(strip_tags($a['content']),0,200,'utf-8').' ...';?></P>
-                    <div><a href="art.php?art_id=<?php echo $a['art_id'];?>">查看更多>></a></div>
-                    </div>
+                        <P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo  mb_substr(strip_tags($a['content']),0,200,'utf-8').' ...';?><a href="art.php?art_id=<?php echo $a['art_id'];?>">查看更多>></a></P>
                     <div style="clear:both;"></div>
                 </div>
             </article>
             <?php }?>
-            <div id="pagebar">
+            
+           <nav aria-label="...">
+  <ul class="pagination">
+    <li class="disabled">
+      <span>
+        <span aria-hidden="true">&laquo;</span>
+      </span>
+    </li>
+    <li class="active">
+      <span>1 <span class="sr-only">(current)</span></span>
+    </li>
+    ...
+  </ul>
+</nav>
+            <!-- <div id="pagebar">
                 Pages:&nbsp;
                 <?php foreach($page as $k=>$v) {?>
                 <?php if($k == $curr) {?>
@@ -76,14 +150,14 @@
                 <a href="index.php?<?php echo $v;?>"><?php echo $k;?></a>
                 <?php }?>
                 <?php }?>
-            </div>
+            </div> -->
         </div>
-        <div id="rside">
+        <div id="rside" class="col-lg-3 .col-md-4 .col-sm-6 .col-xs-12">
             <aside>
                 <h4>热门排行</h4>
                 <div style="padding-top:10px;">
-                <p></p>
-                <ul>
+                <!-- <p></p> -->
+                <ul class="col-lg-12 .col-md-12 .col-sm-12 .col-xs-12">
                     <?php foreach($hots as $h) {?>
                         <li><a href="art.php?art_id=<?php echo $h['art_id'];?>" title="<?php echo $h['title'];?>"><?php echo $h['title'];?></a></li>
                     <?php }?>
@@ -100,11 +174,9 @@
                         <li><a href="index.php?cat_id=<?php echo $c['cat_id'];?>"><?php echo $c['catname'];?></a></li>
                         
                     <?php }?>
-                    <div class="clear"></div>
                 </ul>
             </div>
         </div>
-        <div class="clear"></div>
         </div>
     </div>
     <div id="footer">Copyright &copy; 2015 · GeneratePress · WordPress</div>

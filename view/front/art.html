@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-<link rel="stylesheet" href="./css/reset.css">
-<link rel="stylesheet" href="./css/index.css">
-<link rel="stylesheet" href="./css/art.css">
-<script src="./js/jquery.min.js"></script>
-<script src="./js/kindeditor-min.js"></script>
-<script src="./js/emoticons.js"></script>
-<script src="./js/zh_CN.js"></script>
-</head>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Article</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/art.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/kindeditor-min.js"></script>
+    <script src="./js/emoticons.js"></script>
+    <script src="./js/zh_CN.js"></script>
+    </head>
 <body>
     <div class="suspend">
     <dl>
@@ -36,12 +46,11 @@
         <?php  }else{ ?>
             <p><a href=""></a>&nbsp;&nbsp;<a><?php echo $_COOKIE['name'] ?><a>&nbsp;&nbsp;<a href=""></a></p>
         <?php } ?>
-        <div class="clear"></div>
         </div>
     </nav>
     <div id="main">
-       <div class="main">
-        <div id="lside">
+       <div class="main container">
+        <div id="lside" class="col-lg-9 .col-md-8 .col-sm-6 .col-xs-1">
             <article>
                 <h2><a href="#"><?php echo $art['title'];?></a></h2>
                 <div class="entry_header">
@@ -52,11 +61,12 @@
                     &nbsp;&nbsp;<a class="comment" href="#"><?php echo $art['comm'];?>条评论</a>
                 </div>
                 <?php if($art['pic']){?>
-                <img width=100% src="<?php echo '.'.$art['pic'];?>" alt="">
+                <img  width=100% src="<?php echo '.'.$art['pic'];?>" alt="">
                 <?php }?>
                 <div class="entry_content">
                     <?php echo $art['content'];?>
                 </div>
+                <div style="clear:both;"></div>
             </article>
             <div id="comments" style="display:block">
                 <?php foreach($comms as $c) {?>
@@ -85,19 +95,19 @@
                     <input placeholder="Email" name="email" type="text" value="" size="30">
                     </p>-->
                     <p>
-                    <textarea name="content" style="width:744px;height:120px;visibility:hidden; font-family:微软雅黑;"></textarea>
+                    <textarea name="content" style="height:120px;visibility:hidden; font-family:微软雅黑;"></textarea>
                     <p>
                     <div style="text-align:center;padding:10px;"><input type="submit" value="提交"></div>
                 </p>
                 </form>
             </div>
         </div>
-        <div id="rside">
+        <div id="rside" class="col-lg-3 .col-md-4 .col-sm-6 .col-xs-12">
             <aside>
                 <h4>热门排行</h4>
                 <div style="padding-top:10px;">
-                <p></p>
-                <ul>
+                <!-- <p></p> -->
+                <ul class="col-lg-12 .col-md-12 .col-sm-12 .col-xs-12">
                     <?php foreach($hots as $h) {?>
                         <li><a href="art.php?art_id=<?php echo $h['art_id'];?>" title="<?php echo $h['title'];?>"><?php echo $h['title'];?></a></li>
                     <?php }?>

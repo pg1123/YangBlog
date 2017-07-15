@@ -1,0 +1,708 @@
+-----------------------------------------
+2017/07/14 07:36:21
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=8
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:36:21
+select * from comment where art_id=8
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:36:21
+insert into comment (name,content,pubtime,art_id,ip) values ('刘洋','','2017-07-14 07:36:21','8','2130706433')
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:36:21
+update art set comm=comm+1 where art_id=8
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:36:21
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:36:21
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:36:21
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=8
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:36:21
+select * from comment where art_id=8
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:36:21
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:36:21
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:36:37
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:36:37
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:36:37
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:36:37
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:36:47
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:36:47
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:36:47
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:36:47
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:36:53
+select * from user where name='刘洋'
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:36:53
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:36:53
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:36:53
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:36:53
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:37:39
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=6
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:37:39
+select * from comment where art_id=6
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:37:39
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:37:39
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:38:22
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=8
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:38:22
+select * from comment where art_id=8
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:38:22
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:38:22
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:25
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:25
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:25
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:25
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:26
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:26
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:26
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:26
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:28
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:28
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:28
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:28
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:28
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:28
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:28
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:28
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:29
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:29
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:29
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:29
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:30
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:30
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:30
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:30
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:30
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:30
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:30
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:30
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:31
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:31
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:31
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:31
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:31
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:31
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:31
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:31
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:32
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:32
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:32
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:32
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:32
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:32
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:32
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 07:39:32
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 11:21:32
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 11:21:32
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 11:21:32
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 11:21:32
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 11:21:38
+select * from user where name='刘洋'
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 11:21:38
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 11:21:38
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 11:21:38
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 11:21:38
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 11:21:39
+select * from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 11:21:41
+select * from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 11:21:44
+select * from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 11:22:15
+select * from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 11:22:15
+insert into art (title,cat_id,content,pubtime,arttag) values ('Linux下几个常用的快捷键','3','<p>
+	<span style=\"font-size:18px;\">1. [tab] 键</span>
+</p>
+<p>
+	<span style=\"font-size:18px;\">在<a href=\"http://lib.csdn.net/base/linux\" class=\"replace_word\" target=\"_blank\">Linux</a>所有的shell中，[tab]是最常用的也是<a href=\"http://lib.csdn.net/base/linux\" class=\"replace_word\" target=\"_blank\">linux</a>的bash &nbsp;shell中最棒的功能；它具有命令补全和档案补全的功能。如果不使用[tab]键，那就别说自己懂linux！</span>
+</p>
+<p>
+	<span style=\"font-size:18px;\">举例，<span style=\"font-size:18px;\">命令补全</span></span>
+</p>
+<p>
+	<span style=\"font-size:18px;\">我想将磁盘格式化成ext3 &nbsp;，但是不知道命令是什么了，只记得只mk开头的，那我可以输个mk然后连按两下[tab]</span>
+</p>
+<p>
+	<img src=\"http://img.blog.csdn.net/20130920145810484?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXVhbmxpeWFkYW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center\" alt=\"\" />
+</p>
+<p>
+	<span style=\"font-size:18px;\"><span style=\"font-size:18px;\"><span style=\"font-size:18px;\">档案补全</span></span></span>
+</p>
+<p>
+	<span style=\"font-size:18px;\"><span style=\"font-size:18px;\">我想查看/home/<a href=\"http://lib.csdn.net/base/mysql\" class=\"replace_word\" target=\"_blank\">MySQL</a>/中所有的隐藏文件，只要输个.然后按两次[tab]所有以.开头的文件都可以显示出来。</span><br />
+</span>
+</p>
+<p>
+	<span style=\"font-size:18px;\">[root@kissing ~]# ls -al /home/<a href=\"http://lib.csdn.net/base/mysql\" class=\"replace_word\" target=\"_blank\">mysql</a>/.<br />
+./ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .bash_logout &nbsp; .bashrc &nbsp; &nbsp; &nbsp; &nbsp;<br />
+../ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;.bash_profile &nbsp;.mozilla/&nbsp;</span>
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<span style=\"font-size:18px;\">2. [ctrl] +c 强制终止当前的进程</span>
+</p>
+<p>
+	<span style=\"font-size:18px;\">如果在linux下，输入了错误的指令或参数，有时候这个命令就会在系统中跑不停，可以用【ctrl+c】来终止</span>
+</p>
+<p>
+	<span style=\"font-size:18px;\"><img src=\"http://img.blog.csdn.net/20130920150658453?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXVhbmxpeWFkYW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center\" alt=\"\" /><br />
+</span>
+</p>
+<p>
+	<span style=\"font-size:18px;\">3、[ctrl+d]键&nbsp;</span>
+</p>
+<p>
+	<span style=\"font-size:18px;\">两个功能，一是代表键盘输入的结束；二是用来取代exit命令。例如要离开文字借口，可以直接按下<span style=\"font-size:18px;\">[ctrl+d]键。</span></span>
+</p>
+<p>
+	<span style=\"font-size:18px;\">当我用ssh客户端去连接linux，此时，我按了<span style=\"font-size:18px;\">[ctrl+d]键就是这个效果</span></span>
+</p>
+<p>
+	<span style=\"font-size:18px;\">[root@kissing ~]#&nbsp;<br />
+[root@kissing ~]# logout</span>
+</p>
+<p>
+	<span style=\"font-size:18px;\">4、[ctrl+L]键</span>
+</p>
+<p>
+	<span style=\"font-size:18px;\">这个 很实用，清屏，跟clear命令式等效的。</span>
+</p>
+<p>
+	<span style=\"font-size:18px;\">5、[ctrl +K]键&nbsp;</span>
+</p>
+<p>
+	<span style=\"font-size:18px;\">删除 从光标到行末的所有字符</span>
+</p>
+<p>
+	<span style=\"font-size:18px;\"><img src=\"http://img.blog.csdn.net/20130920151513765?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXVhbmxpeWFkYW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center\" alt=\"\" /></span>
+</p>
+<p>
+	<span style=\"font-size:18px;\">6、[ctrl+U]键清除当前行，与[ctrl+K]相反，删除从光标到行首的所有字符</span>
+</p>
+<p>
+	<span style=\"font-size:18px;\"><img src=\"http://img.blog.csdn.net/20130920151903953?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXVhbmxpeWFkYW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center\" alt=\"\" /><br />
+</span>
+</p>
+<p>
+	<span style=\"font-size:18px;\">&nbsp;7、[ctrl+A] 键 &nbsp;移动光标到行首</span>
+</p>
+<p>
+	<span style=\"font-size:18px;\">8、[ctrl+E]键 &nbsp;移动光标到行尾</span>
+</p>
+<p>
+	<span style=\"font-size:18px;\">9、 cd ~ &nbsp;进入当前用户的家目录&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src=\"http://img.blog.csdn.net/20130920152425593?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXVhbmxpeWFkYW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center\" alt=\"\" />&nbsp;
+ &nbsp; &nbsp; &nbsp; &nbsp;</span>
+</p>
+<p>
+	10、cd &nbsp;- &nbsp;返回前一次进入的目录
+</p>
+<p>
+	<img src=\"http://img.blog.csdn.net/20130920152609062?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXVhbmxpeWFkYW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center\" alt=\"\" />
+</p>
+<p>
+	再补充几个：
+</p>
+<p style=\"text-indent:2em;font-family:\'black Verdana\',Arial,Helvetica,sans-serif;font-size:14px;\">
+	Shift+Ctrl+T:新建标签页
+</p>
+<p style=\"text-indent:2em;font-family:\'black Verdana\',Arial,Helvetica,sans-serif;font-size:14px;\">
+	Shift+Ctrl+W:关闭标签页
+</p>
+<p style=\"text-indent:2em;font-family:\'black Verdana\',Arial,Helvetica,sans-serif;font-size:14px;\">
+	Ctrl+PageUp:前一标签页
+</p>
+<p style=\"text-indent:2em;font-family:\'black Verdana\',Arial,Helvetica,sans-serif;font-size:14px;\">
+	Ctrl+PageDown:后一标签页
+</p>
+<p style=\"text-indent:2em;font-family:\'black Verdana\',Arial,Helvetica,sans-serif;font-size:14px;\">
+	Shift+Ctrl+PageUp:标签页左移
+</p>
+<p style=\"text-indent:2em;font-family:\'black Verdana\',Arial,Helvetica,sans-serif;font-size:14px;\">
+	Shift+Ctrl+PageDown:标签页右移
+</p>
+<p style=\"text-indent:2em;font-family:\'black Verdana\',Arial,Helvetica,sans-serif;font-size:14px;\">
+	Alt+1:切换到标签页1
+</p>
+<p style=\"text-indent:2em;font-family:\'black Verdana\',Arial,Helvetica,sans-serif;font-size:14px;\">
+	Alt+2:切换到标签页2
+</p>
+<p style=\"text-indent:2em;font-family:\'black Verdana\',Arial,Helvetica,sans-serif;font-size:14px;\">
+	Alt+3:切换到标签页3
+</p>
+<p style=\"text-indent:2em;font-family:\'black Verdana\',Arial,Helvetica,sans-serif;font-size:14px;\">
+	Shift+Ctrl+N:新建窗口
+</p>
+<p style=\"text-indent:2em;font-family:\'black Verdana\',Arial,Helvetica,sans-serif;font-size:14px;\">
+	Shift+Ctrl+Q:关闭终端
+</p>
+<p style=\"text-indent:2em;font-family:\'black Verdana\',Arial,Helvetica,sans-serif;font-size:14px;\">
+	终端中的复制／粘贴:
+</p>
+<p style=\"text-indent:2em;font-family:\'black Verdana\',Arial,Helvetica,sans-serif;font-size:14px;\">
+	Shift+Ctrl+C:复制
+</p>
+<p style=\"text-indent:2em;font-family:\'black Verdana\',Arial,Helvetica,sans-serif;font-size:14px;\">
+	Shift+Ctrl+V:粘贴
+</p>
+<p style=\"text-indent:2em;font-family:\'black Verdana\',Arial,Helvetica,sans-serif;font-size:14px;\">
+	终端改变大小：
+</p>
+<p style=\"text-indent:2em;font-family:\'black Verdana\',Arial,Helvetica,sans-serif;font-size:14px;\">
+	F11：全屏
+</p>
+<p style=\"text-indent:2em;font-family:\'black Verdana\',Arial,Helvetica,sans-serif;font-size:14px;\">
+	Ctrl+plus:放大
+</p>
+<p style=\"text-indent:2em;font-family:\'black Verdana\',Arial,Helvetica,sans-serif;font-size:14px;\">
+	Ctrl+minus:减小
+</p>
+<p style=\"text-indent:2em;font-family:\'black Verdana\',Arial,Helvetica,sans-serif;font-size:14px;\">
+	Ctrl+0:原始大小
+</p>
+<br />','1500002535','linux')
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 11:22:15
+insert into tag (art_id,tag) values (9,'linux') 
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 11:22:15
+update cat set num=num+1 where cat_id=3
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 11:22:19
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 11:22:19
+select count(*) from art where 1
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 11:22:19
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 0,10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 11:22:19
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 11:22:39
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=9
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 11:22:39
+select * from comment where art_id=9
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 11:22:39
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 11:22:39
+select cat_id,catname from cat
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 11:23:25
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=9
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 11:23:25
+select * from comment where art_id=9
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 11:23:25
+select art_id,title,content,pubtime,comm,catname,thumb from art inner 
+join cat on art.cat_id=cat.cat_id where 1 order by art_id desc limit 10
+-----------------------------------------
+
+-----------------------------------------
+2017/07/14 11:23:25
+select cat_id,catname from cat
+-----------------------------------------
+
